@@ -1,16 +1,27 @@
-// window.cipher = (){
-// ...
-// };
+window.cipher = (){
+  encode: function cifrar(desplazamiento, texto){
+      let palabra= [];
+      for(let i = 0; i<texto.length; i++){
+      let caracter = texto[i];
+      let ascii = caracter.charCodeAt(0);
+      let codificar = (ascii -65+ desplazamiento)%26+65;
+      let alfa = String.fromCharCode(codificar);
+      palabra.push(alfa);
+      }
+      return palabra;
 
+},
 
-    // cipher.encode(offset, string): offset es el número de posiciones que queremos mover a la derecha en el alfabeto y string el mensaje (texto) que queremos cifrar.
-    // cipher.decode(offset, string): offset es el número de posiciones que queremos mover a la izquierda en el alfabeto y string el mensaje (texto) que queremos descifrar.
+  decode : function decifrar(desplazamiento, texto){
+      let palabra= [];
+      for(let i = 0; i<texto.length; i++){
+      let caracter = texto[i];
+      let ascii = caracter.charCodeAt(0);
+      let decodificar = (ascii +65- desplazamiento)%26+65;
+      let alfa = String.fromCharCode(decodificar);
+      palabra.push(alfa);
+      }
+      return palabra;
+  }
 
-// Creando el codigo
-const Clave = ()=> {
- const bot1 = document.getElementById('bot1').value;
-    return  console.log(bot1);
-    // Formula (x + n) % 26 ___(x-65+n)%26+65
-
-}
-//  console.log("displacear string = ABC
+},
