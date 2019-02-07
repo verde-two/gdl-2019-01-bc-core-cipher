@@ -1,13 +1,14 @@
 body {
   background-image:url(https://image.freepik.com/foto-gratis/coleccion-humo-blanco-sobre-fondo-negro_1112-1612.jpg);
 	background-repeat: no-repeat;
-	background-size: 120%;
+	background-size: 150%;
 }
 
 h1{
   color: white;
 	font-size: 60px;
 	padding: 5px;
+  text-align: center;
 
 }
 
@@ -30,8 +31,9 @@ p{
 input{
  background:darkgray;
  color: inherit;
+ padding: 2px
 }
 
 #Clave{
-	background:darkseagreen;
+	background: lightgrey;
 }
