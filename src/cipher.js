@@ -22,8 +22,8 @@ window.cipher = {
       let alfa = String.fromCharCode(decodificar);
       palabra.push(alfa);
       }
-      let palabra2 = palabra.join("");
-      return palabra2;
+      let palabra3 = palabra.join("");
+      return palabra3;
   }
 
 };

@@ -13,9 +13,9 @@ function mostrar(){
 function terminar(){
 
   let save = document.getElementById("offset").value;//Guardando valor de offset
-  let text2 = document.getElementById("texto2").value;//Guardando valor de texto2
-  let run2 = cipher.decode(save, text2);//Juntando offset y test
+  let text3 = document.getElementById("texto2").value;//Guardando valor de texto2
+  let run2 = cipher.decode(save, text3);//Juntando offset y testo2
   document.getElementById("cod2").innerHTML = run2;
-
+  console.log(run2);
 }
   document.getElementById("Clave").addEventListener( "click", terminar);
