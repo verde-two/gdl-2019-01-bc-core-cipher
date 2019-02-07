@@ -4,31 +4,30 @@
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
-<samp id="root">
-  <h1>Juega a ser un espia!</h1>
 </head>
 <body>
-  <div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+  <samp id="root">
+    <h1>Juega a ser un espia!</h1>
+   <div>
     <!-- imagen principal-->
     <img src="https://www.electropolis.es/blog/wp-content/uploads/2017/08/top-20mobileapps.jpg" alt="Espia">
     <h2>Cifra mensajes y resuelve misiones secretas</h2>
-  </div>
-  <div>
+   </div>
+   <div>
     <p>Bienvenido Agente</p>
     <p>Para cifrar usaremos un metodo <b><i>infallible</i></b> el<strong> <u>"Cifrado Cesar"</u></strong></p>
     <p>Escribe un numero de 2 digitos</p>
     <!--Creando input y guardando variable-->
     <input id="offset" type="number" min="1" max="99">
     <input type="button"  id="Clave" value= "Clave">
-  </div>
-  <div>
-      <p>Alfabeto decifrado:</p><!--<!- debe ser el nuevo codigo creado por el usuario-->
-      <input id="texto" type="text" >
-  </div>
-
-  <div>
+   </div>
+   <div>
+    <p>Alfabeto decifrado:</p><!--<!- debe ser el nuevo codigo creado por el usuario-->
+    <input id="texto" type="text" >
+   </div>
+   <div>
     <!--ultima pantalla de mision -->
     <p>Tu mision es codificar tu nombre! </p><!-- la mision es que el usuario codifique una palabra-->
     <!-- input que recibe mision1-->
@@ -37,6 +36,6 @@
     <input type="text" id="texto2">
     <p>Tu texto Decifrado es:<br> <span type="text" id="cod2"> </span> </p>
   </div>
-</samp>
+ </samp>
 </body>
 </html>
