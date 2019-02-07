@@ -18,31 +18,34 @@
      <p>Para cifrar usaremos un metodo <b><i>infallible</i></b> el<strong> <u>"Cifrado Cesar"</u></strong></p>
      <p>Escribe un numero de 2 digitos</p>
      <!--Creando input y guardando variable-->
-     <input id="bot1" type="number" min="1", max="99">
-     <input type="button" value="Clave" id='Clave' onclick="Clave()">
+     <input id="offset" type="number" min="1", max="99">
+     <input type="button"  id="Clave" value= "Clave">
      <script src="cipher.js"></script>
      <script src="index.js"></script>
      <script scr="style.CSS"></script>
+
+
+    </script>
     </div>
     <div>
      <p>Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-     <p>Alfabeto cifrado:"xxxx"</p><!--<!- debe ser el nuevo codigo creado por el usuario-->
-
+     <div id= "abc">
+      <p>Alfabeto cifrado:"xxx"</p><!--<!- debe ser el nuevo codigo creado por el usuario-->
+      <input id="texto" type="text" >
+     </div>
      <!--aqui apareceria la pregunta "bienbenido agente = cod1" ya codificada -->
 
-     <!-- input que recibe cod1-->
-     <input type="text" name="cod1" value="">
-     <!-- boton botton siguiente pantalla-->
-     <input type="button" name="" value="" onclick="">
+
   <div>
      <!--ultima pantalla de mision -->
      <p>Tu mision es codificar tu nombre! </p><!-- la mision es que el usuario codifique una palabra-->
      <!-- input que recibe mision1-->
-     <input type="text" name="mision1" value="">
-     <!-- boton botton siguiente pantalla "A"--><!--Fin o repetir-->
-     <input type="button" name="" value="" onclick="" onclick="">
-  </div>
 
-    </div>
-  </body>
+     <p>Tu texto Cifrado es:<br> <span type="text" id="cod"> </span> </p>
+     <!-- boton botton siguiente pantalla "A"--><!--Fin o repetir-->
+     <input id="" type="button"  value="Enviar">
+  </div>
+     <input type="text" id="texto2">
+     <input id="texto" type="button" value="Enviar">
+     <p>Tu texto Decifrado es:<br> <span type="text" id="cod2"> </span> </p>
 </html>
